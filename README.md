@@ -1,0 +1,2 @@
+# LabFour
+binary function

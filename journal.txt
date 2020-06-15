@@ -1,0 +1,57 @@
+Lab Four 07/04 
+
+This Lab required a lot of research around possible methods that I could use to create the function. I primarily used Stack Overflow's forums that
+were already discussing binary converters to find methods as well as MDN Web Docs to learn about the method and how it might be used.
+
+My first few attempts involved using weird and probably useless formulas in combination with Math.floor to attempt to show a result in base 2.
+Although the code itself "worked" the result was inconsistent and did not always return a correct decimal integer.
+
+Eventually I came across the parseInt function that allows you to return a integer with a specified base or radix, as called on MDN Web Docs.
+By using this method I was able to simplify my code and return an (almost) guaranteed outcome. 
+I think my code could still use a bit of cleaning up in order to reduce the risk of NaN being output. This might be because of the syntax I used for my
+function and I will work on it more when time allows for me to go over it and remedy that.
+
+This was a great Lab, it really gave me an appreciation for how much knowledge is available at our fingertips. I think, given more time and practice, I 
+will also find it easier to research what I need to and better understand the direction that my research should take.
+Given that so much work has already been put into creating and working with programming languages being able to comprehend that work and use it to improve
+my own code is invaluable. 
+
+References
+-----------
+    ParseInt(). 
+    (n.d.). MDN Web Docs. Retrieved June 15, 2020, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+
+    type conversion—How to convert binary representation of number from string to integer number in JavaScript? 
+    (n.d.). Stack Overflow. Retrieved June 15, 2020, from https://stackoverflow.com/questions/11103487/how-to-convert-binary-representation-of-number-from-string-to-integer-number-in
+
+
+
+
+
+
+-----------practice code-----------
+function decimalNumber(x){
+
+x = x / (2 ^ 10)
+console.log(Math.floor(x))
+
+}
+
+console.log(decimalNumber(1101)) 
+
+first attempt*/
+
+// Second(22th) attempt
+
+/*LabFour - functioning binary converter
+
+function decimalNumber(x){
+    
+    return (parseInt(x, 2))
+
+
+}
+console.log(decimalNumber(111111110)) //510
+
+/*Seems about right?
+*/
